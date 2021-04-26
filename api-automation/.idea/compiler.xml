@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cmp-mock-es" />
+        <module name="api-automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-automation" target="1.8" />
       <module name="cmp" target="1.8" />
-      <module name="cmp-mock-es" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-automation" options="-parameters" />
       <module name="cmp" options="-parameters" />
-      <module name="cmp-mock-es" options="-parameters" />
     </option>
   </component>
 </project>
