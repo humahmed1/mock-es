@@ -1,8 +1,0 @@
-com/example/es/dao/RetailCustomerRepository.class
-com/example/es/SwaggerConfig.class
-com/example/es/service/RestTemplateConfig.class
-com/example/es/RetailCustomerApplication.class
-com/example/es/RetailCustomerResource.class
-com/example/es/service/RetailCustomerServiceImpl.class
-com/example/es/service/RetailCustomerService.class
-com/example/es/model/RetailCustomer.class
