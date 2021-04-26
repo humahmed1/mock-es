@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.es.RetailCustomerApplicationTest" time="9.22" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="consoleLogLevel" value="INFO"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/test-classes:/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/classes:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0/spring-boot-starter-data-jpa-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.4.0/spring-boot-starter-aop-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-aop/5.3.1/spring-aop-5.3.1.jar:/Users/humahmed1/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.4.0/spring-boot-starter-jdbc-2.4.0.jar:/Users/humahmed1/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-jdbc/5.3.1/spring-jdbc-5.3.1.jar:/Users/humahmed1/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/humahmed1/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/hibernate-core/5.4.23.Final/hibernate-core-5.4.23.Final.jar:/Users/humahmed1/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/humahmed1/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/humahmed1/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/humahmed1/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/Users/humahmed1/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/humahmed1/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/Users/humahmed1/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/Users/humahmed1/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/Users/humahmed1/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/humahmed1/.m2/repository/org/springframework/data/spring-data-jpa/2.4.1/spring-data-jpa-2.4.1.jar:/Users/humahmed1/.m2/repository/org/springframework/data/spring-data-commons/2.4.1/spring-data-commons-2.4.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-orm/5.3.1/spring-orm-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-context/5.3.1/spring-context-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-tx/5.3.1/spring-tx-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-beans/5.3.1/spring-beans-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-aspects/5.3.1/spring-aspects-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.0/spring-boot-starter-web-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.0/spring-boot-starter-json-2.4.0.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.3/jackson-datatype-jdk8-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.3/jackson-module-parameter-names-2.11.3.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.0/spring-boot-starter-tomcat-2.4.0.jar:/Users/humahmed1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.39/tomcat-embed-core-9.0.39.jar:/Users/humahmed1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.39/tomcat-embed-websocket-9.0.39.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-web/5.3.1/spring-web-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-webmvc/5.3.1/spring-webmvc-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-expression/5.3.1/spring-expression-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-devtools/2.4.0/spring-boot-devtools-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot/2.4.0/spring-boot-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.0/spring-boot-autoconfigure-2.4.0.jar:/Users/humahmed1/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.4.0/spring-boot-starter-test-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-test/2.4.0/spring-boot-test-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.4.0/spring-boot-test-autoconfigure-2.4.0.jar:/Users/humahmed1/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/humahmed1/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/humahmed1/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/humahmed1/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.0/mockito-junit-jupiter-3.6.0.jar:/Users/humahmed1/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/humahmed1/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-core/5.3.1/spring-core-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-jcl/5.3.1/spring-jcl-5.3.1.jar:/Users/humahmed1/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-amqp/2.4.2/spring-boot-starter-amqp-2.4.2.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-messaging/5.3.1/spring-messaging-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/amqp/spring-rabbit/2.3.1/spring-rabbit-2.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/amqp/spring-amqp/2.3.1/spring-amqp-2.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/retry/spring-retry/1.3.0/spring-retry-1.3.0.jar:/Users/humahmed1/.m2/repository/com/rabbitmq/amqp-client/5.10.0/amqp-client-5.10.0.jar:/Users/humahmed1/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/9.2.0.jre11/mssql-jdbc-9.2.0.jre11.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/Users/humahmed1/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/humahmed1/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/humahmed1/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/humahmed1/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/humahmed1/.m2/repository/org/mockito/mockito-core/3.6.0/mockito-core-3.6.0.jar:/Users/humahmed1/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/humahmed1/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/humahmed1/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/humahmed1/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-test/5.3.1/spring-test-5.3.1.jar:/Users/humahmed1/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/humahmed1/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/humahmed1/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/humahmed1/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/humahmed1/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/humahmed1/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:/Users/humahmed1/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/humahmed1/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.0/spring-boot-starter-2.4.0.jar:/Users/humahmed1/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/humahmed1/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/humahmed1/.m2/repository/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-bean-validators/2.9.2/springfox-bean-validators-2.9.2.jar:/Users/humahmed1/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/humahmed1/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/humahmed1/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/Users/humahmed1/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-core/2.9.2/springfox-core-2.9.2.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.0/spring-boot-starter-validation-2.4.0.jar:/Users/humahmed1/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.6.Final/hibernate-validator-6.1.6.Final.jar:/Users/humahmed1/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/humahmed1/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar:/Users/humahmed1/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/humahmed1/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar:/Users/humahmed1/.m2/repository/org/mapstruct/mapstruct/1.2.0.Final/mapstruct-1.2.0.Final.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger-ui/2.9.2/springfox-swagger-ui-2.9.2.jar:/Users/humahmed1/.m2/repository/com/intuit/karate/karate-junit4/1.0.0/karate-junit4-1.0.0.jar:/Users/humahmed1/.m2/repository/com/intuit/karate/karate-core/1.0.0/karate-core-1.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/js/js-scriptengine/21.0.0/js-scriptengine-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/sdk/graal-sdk/21.0.0/graal-sdk-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/js/js/21.0.0/js-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/regex/regex/21.0.0/regex-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/truffle/truffle-api/21.0.0/truffle-api-21.0.0.jar:/Users/humahmed1/.m2/repository/com/ibm/icu/icu4j/67.1/icu4j-67.1.jar:/Users/humahmed1/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/humahmed1/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/humahmed1/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/humahmed1/.m2/repository/de/siegmar/fastcsv/1.0.4/fastcsv-1.0.4.jar:/Users/humahmed1/.m2/repository/info/picocli/picocli/4.5.2/picocli-4.5.2.jar:/Users/humahmed1/.m2/repository/net/masterthought/cucumber-reporting/5.5.3/cucumber-reporting-5.5.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.3/jackson-datatype-jsr310-2.11.3.jar:/Users/humahmed1/.m2/repository/org/apache/velocity/velocity-engine-core/2.2/velocity-engine-core-2.2.jar:/Users/humahmed1/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/humahmed1/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar:/Users/humahmed1/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/humahmed1/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/humahmed1/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/humahmed1/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/humahmed1/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20200713.1/owasp-java-html-sanitizer-20200713.1.jar:/Users/humahmed1/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/humahmed1/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/humahmed1/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/humahmed1/.m2/repository/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-spring/1.2.4/cucumber-spring-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/humahmed1/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="applicationLogLevel" value="INFO"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/surefire/surefirebooter6980845991383582558.jar /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/surefire 2021-04-26T15-28-34_519-jvmRun1 surefire7764057060218732167tmp surefire_04420757799615328508tmp"/>
+    <property name="applicationLogDir" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/logs"/>
+    <property name="surefire.test.class.path" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/test-classes:/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/classes:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0/spring-boot-starter-data-jpa-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.4.0/spring-boot-starter-aop-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-aop/5.3.1/spring-aop-5.3.1.jar:/Users/humahmed1/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.4.0/spring-boot-starter-jdbc-2.4.0.jar:/Users/humahmed1/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-jdbc/5.3.1/spring-jdbc-5.3.1.jar:/Users/humahmed1/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/humahmed1/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/hibernate-core/5.4.23.Final/hibernate-core-5.4.23.Final.jar:/Users/humahmed1/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/humahmed1/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/humahmed1/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/humahmed1/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/Users/humahmed1/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/humahmed1/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/Users/humahmed1/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/Users/humahmed1/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/Users/humahmed1/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/humahmed1/.m2/repository/org/springframework/data/spring-data-jpa/2.4.1/spring-data-jpa-2.4.1.jar:/Users/humahmed1/.m2/repository/org/springframework/data/spring-data-commons/2.4.1/spring-data-commons-2.4.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-orm/5.3.1/spring-orm-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-context/5.3.1/spring-context-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-tx/5.3.1/spring-tx-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-beans/5.3.1/spring-beans-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-aspects/5.3.1/spring-aspects-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.0/spring-boot-starter-web-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.0/spring-boot-starter-json-2.4.0.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.3/jackson-datatype-jdk8-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.3/jackson-module-parameter-names-2.11.3.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.0/spring-boot-starter-tomcat-2.4.0.jar:/Users/humahmed1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.39/tomcat-embed-core-9.0.39.jar:/Users/humahmed1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.39/tomcat-embed-websocket-9.0.39.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-web/5.3.1/spring-web-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-webmvc/5.3.1/spring-webmvc-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-expression/5.3.1/spring-expression-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-devtools/2.4.0/spring-boot-devtools-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot/2.4.0/spring-boot-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.0/spring-boot-autoconfigure-2.4.0.jar:/Users/humahmed1/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.4.0/spring-boot-starter-test-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-test/2.4.0/spring-boot-test-2.4.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.4.0/spring-boot-test-autoconfigure-2.4.0.jar:/Users/humahmed1/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/humahmed1/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/humahmed1/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/humahmed1/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.0/mockito-junit-jupiter-3.6.0.jar:/Users/humahmed1/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/humahmed1/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-core/5.3.1/spring-core-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-jcl/5.3.1/spring-jcl-5.3.1.jar:/Users/humahmed1/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-amqp/2.4.2/spring-boot-starter-amqp-2.4.2.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-messaging/5.3.1/spring-messaging-5.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/amqp/spring-rabbit/2.3.1/spring-rabbit-2.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/amqp/spring-amqp/2.3.1/spring-amqp-2.3.1.jar:/Users/humahmed1/.m2/repository/org/springframework/retry/spring-retry/1.3.0/spring-retry-1.3.0.jar:/Users/humahmed1/.m2/repository/com/rabbitmq/amqp-client/5.10.0/amqp-client-5.10.0.jar:/Users/humahmed1/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/9.2.0.jre11/mssql-jdbc-9.2.0.jre11.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/Users/humahmed1/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/humahmed1/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/humahmed1/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/humahmed1/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/humahmed1/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/humahmed1/.m2/repository/org/mockito/mockito-core/3.6.0/mockito-core-3.6.0.jar:/Users/humahmed1/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/humahmed1/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/humahmed1/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/humahmed1/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/humahmed1/.m2/repository/org/springframework/spring-test/5.3.1/spring-test-5.3.1.jar:/Users/humahmed1/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/humahmed1/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/humahmed1/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/humahmed1/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/humahmed1/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/humahmed1/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:/Users/humahmed1/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/humahmed1/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.0/spring-boot-starter-2.4.0.jar:/Users/humahmed1/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/humahmed1/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/humahmed1/.m2/repository/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-bean-validators/2.9.2/springfox-bean-validators-2.9.2.jar:/Users/humahmed1/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/humahmed1/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/humahmed1/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/Users/humahmed1/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-core/2.9.2/springfox-core-2.9.2.jar:/Users/humahmed1/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.0/spring-boot-starter-validation-2.4.0.jar:/Users/humahmed1/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/humahmed1/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.6.Final/hibernate-validator-6.1.6.Final.jar:/Users/humahmed1/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/humahmed1/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar:/Users/humahmed1/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/humahmed1/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar:/Users/humahmed1/.m2/repository/org/mapstruct/mapstruct/1.2.0.Final/mapstruct-1.2.0.Final.jar:/Users/humahmed1/.m2/repository/io/springfox/springfox-swagger-ui/2.9.2/springfox-swagger-ui-2.9.2.jar:/Users/humahmed1/.m2/repository/com/intuit/karate/karate-junit4/1.0.0/karate-junit4-1.0.0.jar:/Users/humahmed1/.m2/repository/com/intuit/karate/karate-core/1.0.0/karate-core-1.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/js/js-scriptengine/21.0.0/js-scriptengine-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/sdk/graal-sdk/21.0.0/graal-sdk-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/js/js/21.0.0/js-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/regex/regex/21.0.0/regex-21.0.0.jar:/Users/humahmed1/.m2/repository/org/graalvm/truffle/truffle-api/21.0.0/truffle-api-21.0.0.jar:/Users/humahmed1/.m2/repository/com/ibm/icu/icu4j/67.1/icu4j-67.1.jar:/Users/humahmed1/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/humahmed1/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/humahmed1/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/humahmed1/.m2/repository/de/siegmar/fastcsv/1.0.4/fastcsv-1.0.4.jar:/Users/humahmed1/.m2/repository/info/picocli/picocli/4.5.2/picocli-4.5.2.jar:/Users/humahmed1/.m2/repository/net/masterthought/cucumber-reporting/5.5.3/cucumber-reporting-5.5.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/humahmed1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.3/jackson-datatype-jsr310-2.11.3.jar:/Users/humahmed1/.m2/repository/org/apache/velocity/velocity-engine-core/2.2/velocity-engine-core-2.2.jar:/Users/humahmed1/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/humahmed1/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar:/Users/humahmed1/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/humahmed1/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/humahmed1/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/humahmed1/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/humahmed1/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20200713.1/owasp-java-html-sanitizer-20200713.1.jar:/Users/humahmed1/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/humahmed1/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/humahmed1/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/humahmed1/.m2/repository/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar:/Users/humahmed1/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-spring/1.2.4/cucumber-spring-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/humahmed1/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/humahmed1/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/humahmed1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/surefire/surefirebooter6980845991383582558.jar:/Users/humahmed1/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="humahmed1"/>
+    <property name="path.separator" value=":"/>
+    <property name="rootLogLevel" value="WARN"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="logImmediateFlush" value="true"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="spring.beaninfo.ignore" value="true"/>
+    <property name="logFilePrefix" value="log"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/humahmed1/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/j9/j9jhq7216h77v3z8pf8szxz40000gn/T/"/>
+    <property name="fileLogLevel" value="INFO"/>
+    <property name="com.zaxxer.hikari.pool_number" value="4"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="62502"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/humahmed1/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="/Users/humahmed1/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="getTest" classname="com.example.es.RetailCustomerApplicationTest" time="1.519">
+    <system-out><![CDATA[[INFO] Could not detect default resource locations for test class [com.example.es.RetailCustomerApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@34c2e03d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17e4beda, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1be4f05c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4202bfe8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61627c9d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53c21c05, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6f986031, org.springframework.test.context.event.EventPublishingTestExecutionListener@38326fd5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4a467ada, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@92775a3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2512155e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ef59aee, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@779cb140, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@45a4587d]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.0)
+
+[INFO] HV000001: Hibernate Validator 6.1.6.Final
+[INFO] Starting RetailCustomerApplicationTest using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 62502 (started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
+[INFO] No active profile set, falling back to default profiles: default
+[INFO] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[INFO] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+[INFO] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:38.629  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 15:28:38.904  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 5.4.23.Final
+[INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO] Initializing Spring TestDispatcherServlet ''
+[INFO] Initializing Servlet ''
+[INFO] Completed initialization in 1 ms
+2021-04-26 15:28:40.744  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-26 15:28:40.777  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-26 15:28:40.825  INFO 62502 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[INFO] Triggering deferred initialization of Spring Data repositories…
+[INFO] Spring Data repositories initialized!
+[INFO] Started RetailCustomerApplicationTest in 4.67 seconds (JVM running for 6.377)
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:41.353  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-26 15:28:41.355  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.0)
+
+[INFO] Starting RetailCustomerApplicationTest using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 62502 (started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
+[INFO] No active profile set, falling back to default profiles: default
+[INFO] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[INFO] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+[INFO] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:42.005  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-26 15:28:42.007  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO] Initializing Spring TestDispatcherServlet ''
+[INFO] Initializing Servlet ''
+[INFO] Completed initialization in 1 ms
+2021-04-26 15:28:42.578  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-26 15:28:42.579  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-26 15:28:42.583  INFO 62502 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[INFO] Triggering deferred initialization of Spring Data repositories…
+[INFO] Spring Data repositories initialized!
+[INFO] Started RetailCustomerApplicationTest in 1.258 seconds (JVM running for 7.86)
+[INFO] Began transaction (1) for test context [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@47f3d8ad, testMethod = getTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@60e1564f]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@4488b91e]; rollback [true]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /es/customer/1
+       Parameters = {}
+          Headers = [Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.es.RetailCustomerResource
+           Method = com.example.es.RetailCustomerResource#getCustomer(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"esCustomerID":1,"esName":"Humaira","esIsSenior":false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[INFO] Rolled back transaction for test: [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@47f3d8ad, testMethod = getTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@60e1564f]]
+]]></system-out>
+    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/microsoft/sqlserver/jdbc/SQLServerDriver.
+	at org.jacoco.agent.rt.internal_c13123e.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:370)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at java.sql.DriverManager$2.run(DriverManager.java:603)
+	at java.sql.DriverManager$2.run(DriverManager.java:583)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.sql.DriverManager.loadInitialDrivers(DriverManager.java:583)
+	at java.sql.DriverManager.<clinit>(DriverManager.java:101)
+	at org.h2.Driver.load(Driver.java:155)
+	at org.h2.Driver.<clinit>(Driver.java:41)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:490)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder$BeanProperty.setValue(JavaBeanBinder.java:354)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:98)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:80)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:451)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:557)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:449)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:390)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212)
+	at org.springframework.boot.jdbc.DataSourceBuilder.bind(DataSourceBuilder.java:95)
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:78)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1161)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:122)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:99)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.io.IOException: Error while instrumenting com/microsoft/sqlserver/jdbc/SQLServerDriver.
+	at org.jacoco.agent.rt.internal_c13123e.core.instr.Instrumenter.instrumentError(Instrumenter.java:173)
+	at org.jacoco.agent.rt.internal_c13123e.core.instr.Instrumenter.instrument(Instrumenter.java:123)
+	at org.jacoco.agent.rt.internal_c13123e.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 169 more
+Caused by: java.lang.IllegalArgumentException
+	at org.jacoco.agent.rt.internal_c13123e.asm.ClassReader.<init>(ClassReader.java:160)
+	at org.jacoco.agent.rt.internal_c13123e.asm.ClassReader.<init>(ClassReader.java:143)
+	at org.jacoco.agent.rt.internal_c13123e.core.instr.Instrumenter.instrument(Instrumenter.java:89)
+	at org.jacoco.agent.rt.internal_c13123e.core.instr.Instrumenter.instrument(Instrumenter.java:121)
+	... 170 more
+]]></system-err>
+  </testcase>
+  <testcase name="postTest" classname="com.example.es.RetailCustomerApplicationTest" time="1.017">
+    <system-out><![CDATA[[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:42.852  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-26 15:28:42.854  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.0)
+
+[INFO] Starting RetailCustomerApplicationTest using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 62502 (started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
+[INFO] No active profile set, falling back to default profiles: default
+[INFO] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[INFO] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+[INFO] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:43.229  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-26 15:28:43.231  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO] Initializing Spring TestDispatcherServlet ''
+[INFO] Initializing Servlet ''
+[INFO] Completed initialization in 0 ms
+2021-04-26 15:28:43.749  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-26 15:28:43.749  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-26 15:28:43.753  INFO 62502 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[INFO] Triggering deferred initialization of Spring Data repositories…
+[INFO] Spring Data repositories initialized!
+[INFO] Started RetailCustomerApplicationTest in 0.926 seconds (JVM running for 9.026)
+[INFO] Began transaction (1) for test context [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@4c869fd8, testMethod = postTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@23c8ce5b]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@549c8f50]; rollback [true]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /es/customer
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"36"]
+             Body = {"esName":"Ryan","esIsSenior":true }
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.es.RetailCustomerResource
+           Method = com.example.es.RetailCustomerResource#persistResponse(RetailCustomer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"esCustomerID":4,"esName":"Ryan","esIsSenior":true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[INFO] Rolled back transaction for test: [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@4c869fd8, testMethod = postTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@23c8ce5b]]
+]]></system-out>
+  </testcase>
+  <testcase name="getNegativeTest" classname="com.example.es.RetailCustomerApplicationTest" time="0.942">
+    <system-out><![CDATA[[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:43.868  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-26 15:28:43.870  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.0)
+
+[INFO] Starting RetailCustomerApplicationTest using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 62502 (started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
+[INFO] No active profile set, falling back to default profiles: default
+[INFO] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[INFO] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+[INFO] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:28:44.154  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-04-26 15:28:44.156  INFO 62502 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO] Initializing Spring TestDispatcherServlet ''
+[INFO] Initializing Servlet ''
+[INFO] Completed initialization in 0 ms
+2021-04-26 15:28:44.745  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-26 15:28:44.745  INFO 62502 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-26 15:28:44.749  INFO 62502 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[INFO] Triggering deferred initialization of Spring Data repositories…
+[INFO] Spring Data repositories initialized!
+[INFO] Started RetailCustomerApplicationTest in 0.908 seconds (JVM running for 10.023)
+[INFO] Began transaction (1) for test context [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@cfcf20d, testMethod = getNegativeTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@75a68297]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@20005bab]; rollback [true]
+[INFO] Rolled back transaction for test: [DefaultTestContext@67b60899 testClass = RetailCustomerApplicationTest, testInstance = com.example.es.RetailCustomerApplicationTest@cfcf20d, testMethod = getNegativeTest@RetailCustomerApplicationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27836e0a testClass = RetailCustomerApplicationTest, locations = '{}', classes = '{class com.example.es.RetailCustomerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@374472fe key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7816454d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@62c47480, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@470f0637, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@3df6494f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146db8a6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@5b564f99, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1ef04613, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@35d6ca49], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.mocks' -> org.mockito.internal.configuration.InjectingAnnotationEngine$$Lambda$1200/434806465@75a68297]]
+]]></system-out>
+  </testcase>
+</testsuite>
