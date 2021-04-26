@@ -344,3 +344,6 @@
 2021-04-26 16:11:51 [INFO  ] RetailCustomerApplication – Starting RetailCustomerApplication using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 72236 (/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/classes started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
 2021-04-26 16:11:51 [INFO  ] RetailCustomerApplication – No active profile set, falling back to default profiles: default
 2021-04-26 16:11:55 [INFO  ] RetailCustomerApplication – Started RetailCustomerApplication in 4.097 seconds (JVM running for 4.846)
+2021-04-26 16:37:07 [INFO  ] RetailCustomerApplication – Starting RetailCustomerApplication using Java 1.8.0_201 on WKMZT8FE2C3F.global.publicisgroupe.net with PID 78011 (/Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es/target/classes started by humahmed1 in /Users/humahmed1/Documents/Mock_API/mock-gcp-es/cmp-mock-customer-es)
+2021-04-26 16:37:07 [INFO  ] RetailCustomerApplication – No active profile set, falling back to default profiles: default
+2021-04-26 16:37:10 [INFO  ] RetailCustomerApplication – Started RetailCustomerApplication in 3.562 seconds (JVM running for 4.668)

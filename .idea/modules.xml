@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cmp-mock-gcp.iml" filepath="$PROJECT_DIR$/cmp-mock-gcp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mock-gcp-es.iml" filepath="$PROJECT_DIR$/.idea/mock-gcp-es.iml" />
     </modules>
   </component>
 </project>
