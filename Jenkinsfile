@@ -21,8 +21,8 @@ pipeline {
         }
         stage('Deploy and Run') {
             steps {
-                sh 'mvn spring-boot:build-image'
-                sh 'docker run -p 8070:8070 -t cmp:0.0.1-SNAPSHOT'
+                sh 'mvn spring-boot:build-image -DskipTests=true -f cmp-mock-customer-es/pom.xml'
+                sh 'docker run -d -p 8070:8070 -t cmp:0.0.1-SNAPSHOT'
             }
         }
         stage('Integration Test') {
