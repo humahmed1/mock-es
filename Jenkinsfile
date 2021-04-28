@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Stop Image Running') {
             steps{
-                sh 'docker image rm image cmp:0.0.1-SNAPSHOT'
+                sh 'docker ps -a -q --filter ancestor=cmp:0.0.1-SNAPSHOT'
             }
         }
     }
