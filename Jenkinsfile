@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Remove Image and Container') {
             steps{
-                sh 'docker rm $(docker ps -a -q --filter ancestor=cmp:0.0.1-SNAPSHOT )'
+                sh 'docker rmi $(docker images --format '{{.Repository}}:{{.Tag}}' | grep 'cmp')'
             }
         }
     }
