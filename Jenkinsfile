@@ -25,10 +25,11 @@ pipeline {
             }
         }
         stage('Build Image') {
-            steps {
+            steps {     script {
                 //sh 'mvn spring-boot:build-image -DskipTests=true -f cmp-mock-customer-es/pom.xml'
                 //sh 'docker run -d -p 8070:8070 -t cmp:0.0.1-SNAPSHOT'
                 dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                }
             }
         }
         stage('Deploy Image') {
