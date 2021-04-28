@@ -33,6 +33,11 @@ pipeline {
             steps{
                 sh 'mvn -Dtest=api-automation/src/test/java/com/example/es/EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
             }
+            post {
+                    always {
+                        cucumber '**/cucumber.json'
+                    }
+                }
         }
         stage('Stop Image Running') {
             steps{
