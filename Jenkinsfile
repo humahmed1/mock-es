@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Remove Image and Container') {
             steps{
-                sh 'docker rmi $(docker images --format '{{.Repository}}:{{.Tag}}' | grep 'cmp')'
+                sh 'docker rmi $(docker images -q 'cmp' | uniq)'
             }
         }
     }
