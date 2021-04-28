@@ -30,25 +30,11 @@ pipeline {
                 sh 'docker run -d -p 8070:8070 -t cmp:0.0.1-SNAPSHOT'
                 //dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 }
-            }
         }
-//         stage('Deploy Image') {
-//             steps {     script {
-//                docker.withRegistry( '', registryCredential) {
-//                     dockerImage.push()
-//                }
-//               }
-//             }
-//         }
         stage('Integration Test') {
             steps{
                 sh 'mvn -Dtest=api-automation/src/test/java/com/example/es/EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
             }
         }
-//         stage('Remove Docker Image') {
-//             steps{
-//                 sh 'docker rmi $registry:$BUILD_NUMBER'
-//             }
-//         }
     }
 }
