@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Remove Image and Container') {
             steps {
-                sh 'docker rmi $(docker images -q cmp | uniq)'
+                sh 'docker container stop $(docker container ls -q --filter ancestor=cmp:0.0.1-SNAPSHOT)'
             }
         }
     }
