@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Integration Test') {
             steps{
-                sh 'mvn -Dtest=api-automation/src/test/java/com/example/es/EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
+                sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
             }
             post {
                     always {
