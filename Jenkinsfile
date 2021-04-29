@@ -34,10 +34,10 @@ pipeline {
                 sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
             }
             post {
-                    always {
-                        cucumber '**/cucumber.json'
-                    }
+                always {
+                    cucumber '**/cucumber.json'
                 }
+            }
         }
         stage('Remove Image and Container') {
             steps {

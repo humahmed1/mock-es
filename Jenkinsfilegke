@@ -1,5 +1,12 @@
-pipeline{
+pipeline {
+    environment {
+        registry = "humahmed1/repository"
+        registryCredential = 'dockerhub'
+    }
     agent any
+    tools {
+        maven '3.6.3'
+    }
     stages {
         stage('Build') {
             steps {
@@ -16,10 +23,44 @@ pipeline{
                 }
             }
         }
+        stage('Create GKE Cluster') {
+            steps {
+                sh 'gcloud container clusters create cmp-es-cluster --num-nodes=3'
+                sh 'gcloud container clusters get-credentials cmp-es-cluster'
+                }
+        }
         stage('Build Image') {
             steps {
-                sh 'mvn spring-boot:build-image -t  -DskipTests=true -f cmp-mock-customer-es/pom.xml'
-                sh
+                sh 'docker build -t gcr.io/burner-humahmed1/mock-gcp-es:v1 .'
+                }
+        }
+        stage('Push Image to Container Registry') {
+            steps {
+                sh 'gcloud services enable containerregistry.googleapis.com'
+                sh 'gcloud auth configure-docker'
+                sh 'docker push gcr.io/burner-humahmed1/mock-gcp-es:v1'
+                }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'kubectl create deployment es-server --image=gcr.io/burner-humahmed1/mock-gcp-es:v1'
+                sh 'kubectl expose deployment es-server --type LoadBalancer --port 8070'
+                sh 'export FRONTEND_SERVICE_IP=$(kubectl get -o jsonpath="{.status.loadBalancer.ingress[0].ip}" services es-server)'
+                }
+        }
+        stage('Integration Test') {
+            steps{
+                sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
+            }
+            post {
+                    always {
+                        cucumber '**/cucumber.json'
+                    }
+                }
+        }
+        stage('Remove Image and Container') {
+            steps {
+                sh 'docker container stop $(docker container ls -q --filter ancestor=cmp:0.0.1-SNAPSHOT)'
             }
         }
     }
