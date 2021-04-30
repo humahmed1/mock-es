@@ -48,16 +48,6 @@ pipeline {
                 sh 'export FRONTEND_SERVICE_IP=$(kubectl get -o jsonpath="{.status.loadBalancer.ingress[0].ip}" services es-server)'
                 }
         }
-        stage('Integration Test') {
-            steps{
-                sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
-            }
-            post {
-                    always {
-                        cucumber '**/cucumber.json'
-                    }
-                }
-        }
         stage('Remove Image and Container') {
             steps {
                 sh 'docker container stop $(docker container ls -q --filter ancestor=cmp:0.0.1-SNAPSHOT)'
