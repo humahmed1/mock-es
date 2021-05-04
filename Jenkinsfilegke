@@ -46,8 +46,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'kubectl create deployment es-server --image=gcr.io/burner-humahmed1/mock-gcp-es:v1'
-                // sh 'kubectl expose deployment es-server --type LoadBalancer --port 8070'
-                //sh 'kubectl apply -f cmp-poc-api-static-ip.yaml'
+                sh 'kubectl apply -f cmp-poc-api-static-ip.yaml'
             }
         }
     }
