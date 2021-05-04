@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: mock-gcp-es
   labels:
-    app: cmp-mock-customer-es
+    app: es-server
 spec:
   selector:
-    app: mock-gcp-es
+    app: es-server
     tier: web
   ports:
     - port: 80
