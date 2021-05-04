@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1e60897-6f66-417c-8e94-cc7f308fa489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmp-poc-api-static-ip.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfilegke" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfilegke" afterDir="false" />
     </list>
@@ -35,7 +36,7 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="317109682380" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210504_0009" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210504_0010" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />

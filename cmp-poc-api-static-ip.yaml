@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mock-gcp-es
+  labels:
+    app: cmp-mock-customer-es
+spec:
+  selector:
+    app: mock-gcp-es
+    tier: web
+  ports:
+    - port: 80
+      targetPort: 8070
+  type: LoadBalancer
+  loadBalancerIP: 104.154.45.177
