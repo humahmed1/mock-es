@@ -50,6 +50,7 @@ pipeline {
         }
         stage('Integration Test') {
             steps{
+                sleep 60
                 sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
             }
             post {
