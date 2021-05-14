@@ -35,7 +35,7 @@ pipeline {
             }
             post {
                 always {
-                    cucumber 'api-automation/target/cucumber-html-reports/*.html'
+                    cucumber 'api-automation/target/karate-reports/*.json'
                 }
             }
         }
