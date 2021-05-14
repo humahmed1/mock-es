@@ -36,7 +36,7 @@ pipeline {
             post {
                 always {
                     cucumber buildStatus: 'UNSTABLE',
-                            jsonReportsPath: 'api-automation/target/cucumber-html-reports'
+                             jsonReportsPath: 'api-automation/target/cucumber-html-reports'
                              failedFeaturesNumber: 1,
                              failedScenariosNumber: 1,
                              skippedStepsNumber: 1,
