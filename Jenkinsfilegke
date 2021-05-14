@@ -48,5 +48,15 @@ pipeline {
                 sh 'kubectl apply -f cmp-poc-api-static-ip.yaml'
             }
         }
+        stage('Integration Test') {
+            steps{
+                sh 'mvn -Dtest=EsKarateRunner -DfailIfNoTests=false test -f api-automation/pom.xml'
+            }
+            post {
+                always {
+                    cucumber 'api-automation/target/karate-reports/*.json'
+                }
+            }
+        }
     }
 }
