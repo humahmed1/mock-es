@@ -35,7 +35,15 @@ pipeline {
             }
             post {
                 always {
-                    cucumber '**/cucumber.json'
+                    cucumber buildStatus: 'UNSTABLE',
+                            jsonReportsPath: 'api-automation/target/cucumber-html-reports'
+                             failedFeaturesNumber: 1,
+                             failedScenariosNumber: 1,
+                             skippedStepsNumber: 1,
+                             failedStepsNumber: 1,
+                             reportTitle: 'Cucumber report',
+                             fileIncludePattern: '**/*cucumber-report.json',
+                             sortingMethod: 'ALPHABETICAL'
                 }
             }
         }
