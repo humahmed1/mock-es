@@ -5,7 +5,7 @@ metadata:
   labels:
     app: es-server
 spec:
-  clusterIP: 34.123.243.245
+  clusterIP: 10.116.0.0/14
   externalTrafficPolicy: Cluster
   ports:
     - nodePort: 32330
