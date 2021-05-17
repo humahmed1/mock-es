@@ -8,7 +8,7 @@ spec:
 #  clusterIP: 10.83.250.218
   externalTrafficPolicy: Cluster
   ports:
-    - nodePort: 32330
+    - nodePort: 32331
       port: 8070
       protocol: TCP
       targetPort: 8070
